@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import api from '../api/axios';
 import { MapPin, Clock, CreditCard, Ticket, CheckCircle2, ChevronRight, BusFront, ShieldAlert, Bus, ArrowRight } from 'lucide-react';
-import QRCode from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react';
 
 const StudentDashboard = () => {
     const { user } = useAuth();
@@ -284,7 +284,7 @@ const StudentDashboard = () => {
                                 </div>
 
                                 <div className="pt-4 flex justify-center">
-                                    <QRCode value={generatedPassId} size={120} level="M" fgColor="#1C1A17" bgColor="#ffffff" />
+                                    <QRCodeCanvas value={generatedPassId} size={120} level="M" fgColor="#1C1A17" bgColor="#ffffff" />
                                 </div>
                             </div>
                         </div>
