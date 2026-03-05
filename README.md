@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RideU
 
 A modern, full-stack bus pass booking application designed for Vimal Jyothi Engineering College (VJEC). 
@@ -71,3 +72,6 @@ Railway makes it incredibly easy to host both the MySQL database and the Node.js
 
 **Seed Production DB**:
 Once the Railway MySQL instance is up, you can connect to it using a local tool (like MySQL Workbench, or via Railway CLI `railway run`) and execute the `setup.sql` script, or temporarily run `npm run db:seed` against the prod DB credentials.
+=======
+# RIDEU
+>>>>>>> afa32795dbb42febe4403f7fa82756ef870e177b
