@@ -7,7 +7,6 @@ import Login from './pages/Login';
 import StudentDashboard from './pages/StudentDashboard';
 import StudentHistory from './pages/StudentHistory';
 import LiveTracking from './pages/LiveTracking';
-import LiveTracking from './pages/LiveTracking';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminStudents from './pages/AdminStudents';
 import AdminBuses from './pages/AdminBuses';
