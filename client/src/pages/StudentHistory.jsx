@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../api/axios';
 import { Ticket, Bus, ArrowRight, Expand } from 'lucide-react';
-import QRCode from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react';
 
 const StudentHistory = () => {
     const [bookings, setBookings] = useState([]);
@@ -64,7 +64,7 @@ const StudentHistory = () => {
                                 {expandedId === b.id ? (
                                     <div className="pt-4 border-t border-gray-100 flex flex-col items-center animate-in fade-in duration-300">
                                         <p className="text-xs text-ride-slate mb-2">PASS ID: {b.pass_id}</p>
-                                        <QRCode value={b.pass_id} size={100} level="M" />
+                                       <QRCodeCanvas value={b.pass_id} size={100} level="M" />
                                         <button onClick={() => setExpandedId(null)} className="mt-4 text-sm text-ride-terracotta font-medium hover:underline">Hide QR</button>
                                     </div>
                                 ) : (
