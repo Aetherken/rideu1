@@ -284,7 +284,13 @@ const StudentDashboard = () => {
                                 </div>
 
                                 <div className="pt-4 flex justify-center">
-                                    <QRCodeCanvas value={generatedPassId} size={120} level="M" fgColor="#1C1A17" bgColor="#ffffff" />
+                                    <QRCodeCanvas
+  value={generatedPassId}
+  size={120}
+  level="M"
+  fgColor="#1C1A17"
+  bgColor="#ffffff"
+/>
                                 </div>
                             </div>
                         </div>
